@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+.gochi-hand-regular {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, 'Gochi Hand';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #3C5D64;
+  background: linear-gradient(#DEC2DB, #9C92C7, #6DA0E1, #5B62B3);
 }
 
 
@@ -22,10 +29,10 @@ code {
 .bm-burger-button {
   display: none;
 }
-
+z
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #F69D4D;
+  background: #5B62B3;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -59,7 +66,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #F07136;
+  background: #5B62B3;
   padding: 0;
   font-size: 1.15em;
   height: auto !important;

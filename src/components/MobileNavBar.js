@@ -19,7 +19,7 @@ const NavWrap = styled.div`
     left:0;
     flex-wrap: wrap;
     z-index:100;
-    background: #F07136;
+    background: #5B62B3;
 
     @media (min-width: 768px) {
         display:none;
@@ -34,7 +34,7 @@ const NavText = styled.div`
     padding-right: 0.5rem;
     font-family: "Paytone One";
     color: #FFF;
-    background-color: #F07136;
+    background-color: #5B62B3;
     opacity:100%;
     text-transform: uppercase;
     position: relative;
@@ -45,7 +45,7 @@ const NavTextSelected = styled.div`
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 0.5rem;
-    background-color: #015E56;
+    background-color: #9C92C7;
     color: white;
     opacity:100%;
     text-transform: uppercase;
@@ -54,7 +54,7 @@ const NavTextSelected = styled.div`
     width: 100%;
 `;
 const Tab = styled.div`
-    background-color: ${props => props.current ? "#F07136" : "inherit"};
+    background-color: ${props => props.current ? "#5B62B3" : "inherit"};
     color: ${props => props.current ? "white" : "black"};
 `;
 

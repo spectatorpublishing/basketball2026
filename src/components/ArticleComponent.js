@@ -4,14 +4,14 @@ import styled from 'styled-components';
 const ArticleContainer = styled.div`
   width: 100%;
   max-width: 591px;
-  background: #4F6A6F;
+  border: 5px solid #F7ECE5;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   margin: 16px auto; 
   &:hover {
-    background: #435c62;
+    background: ;
     box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.35);
   }
 

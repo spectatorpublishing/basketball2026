@@ -41,7 +41,7 @@ const StyledNavLink = styled(NavLink)`
   height: 65px;
   flex-shrink: 0;
   border-radius: 30px;
-  background: #F07136;
+  background: #9C92C7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,11 +52,11 @@ const StyledNavLink = styled(NavLink)`
   transition: background 0.2s ease;
 
   &:hover {
-    background: #d65c1f; 
+    background: #5B62B3; 
   }
 
   &.active {
-    background: #56999E;
+    background: #5B62B3;
   }
 
   @media (max-width: 768px) {

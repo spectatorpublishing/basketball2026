@@ -8,7 +8,7 @@ import MobileNavBar from '../components/MobileNavBar';
 import ShareButton from '../components/SocialShare';
 
 const PageWrapper = styled.div`
-    background: #3C5D64;
+    background: linear-gradient(#DEC2DB, #9C92C7, #6DA0E1, #5B62B3);
     width: 100%;
     height: auto;
     display: flex;
@@ -18,21 +18,24 @@ const PageWrapper = styled.div`
 `;
 
 const Title = styled.div`
+
     width: 922px;
     height: auto; 
     flex-shrink: 0;
 
-    border: 6px solid #F7ECE5;
+   
+    width: 85%;
+    padding-top: 6rem;   
+    padding-bottom: 1rem;
     color: #F7ECE5;
+    text-align: left;
     
-    text-align: center;
-
-    font-family: "Paytone One";
-    font-size: 3.5rem; 
+    font-family: Gochi Hand;
+    font-size: 56px; 
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.35rem; 
+    line-height: 100%;
+    letter-spacing: 10%; 
 
     @media (max-width: 768px) {
         width: 90%;
@@ -42,15 +45,14 @@ const Title = styled.div`
 `;
 
 const LetterFromEditorWrapper = styled.div`
-    width: 85%;
-    max-width: 1200px; 
+
+    max-width: 86%; 
     height: auto;
     flex-shrink: 0;
     border: 5px solid #F7ECE5;
 
-    margin-top: 1.625rem; 
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 3.825rem; 
+  
 
     display: flex;
     flex-direction: column; 
@@ -65,19 +67,19 @@ const LetterFromEditorWrapper = styled.div`
 `;
 
 const LetterFromEdititor = styled.div`
-    padding-top: 3rem;   
+    padding-top: 2rem;   
     padding-bottom: 2rem;
 
     width: 85%;
     color: #F7ECE5;
 
-    text-align: center;
+    text-align: left;
     font-family: Inter;
-    font-size: 1.4375rem;  
-    font-style: normal;
+    font-size: 23px;  
+    font-style: medium;
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.046rem; 
+    line-height: 28px;
+    letter-spacing: 2%; 
 
     @media (max-width: 768px) {
       width: 90%;
@@ -92,6 +94,8 @@ const SportsEditorLayout = styled.div`
     flex-direction: row; 
     gap: 18rem; 
     margin-bottom: 2rem;
+    justify-content: right;
+    align-items: right;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -99,6 +103,15 @@ const SportsEditorLayout = styled.div`
         gap: 2rem;
     }
 `;
+
+const ShareAndSportsEditorContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+`;
+
+
 
 const SportsEditorWrapper = styled.div`
     width: auto; 
@@ -153,45 +166,38 @@ const Home = () => {
             <MobileNavBar current = {"home"} />
             
             <Banner />
-            <ShareButton />
+            
 
-            <Title>LETTER FROM THE EDITORS</Title>
+            
             
             <LetterFromEditorWrapper>
+            <Title>LETTER FROM THE EDITOR</Title>
                 <LetterFromEdititor>
                     <p>
-                    Dear readers,
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. A mollis amet vitae sed purus, semper ullamcorper augue vitae. Hac pretium urna, tempus sit quam suspendisse maecenas et. Egestas neque sollicitudin rhoncus vitae at ipsum pulvinar faucibus. Facilisi risus blandit egestas in dignissim et sapien faucibus. Tortor accumsan libero sed aliquam dui magna vitae, habitant egestas. Consectetur egestas tellus auctor interdum id gravida quis pellentesque. At amet nulla tellus orci gravida. Egestas aenean mauris in velit. Fermentum consectetur augue et habitant commodo, libero odio.
                     </p>
                     
                     <p>
-                    Last year, Columbia basketball made history. The women’s team earned its first bid to the Big Dance. Ivy Madness, hosted at Levien Gymnasium for the first time, brought fans from all
-                    over the conference into our den.  In the fall, fans were treated to an exciting start to the season as the men’s team had its best start since 1969.
-                    As we move further into Ivy play, the women’s team is on the prowl for its first Ivy tournament title and second consecutive bid to March Madness.
+                    Id nascetur vel eu fermentum elementum ac cras enim. Dui habitant commodo consequat sit in molestie in id. Ipsum volutpat etiam tristique fringilla. Tellus eu quis mauris massa tristique tortor, egestas luctus lacus. Gravida facilisis sagittis eget facilisi molestie amet, ut pellentesque morbi.
                     </p>
                 
                     <p>
-                    In this special edition, our staff takes you through what to expect from conference play, reflects on the stars of the season,
-                    and looks at the changing landscape of college basketball. From recaps of recent games to reviews of new recruits,
-                    Lions fans old and new need not look further for an in-depth guide to everything Columbia basketball has to offer. 
-                    With another historic year in the making, we hope to see you in the stands at Levien.
+Velit massa facilisis non enim arcu. Euismod cursus neque, feugiat vestibulum ornare. Feugiat feugiat tincidunt purus mauris quis lectus neque, molestie. Sed auctor sit fusce tristique. Nisl eu nullam gravida massa morbi purus. Ullamcorper eget sed venenatis enim, elit. In cursus pellentesque lacus ornare a. 
                     </p>
 
-                    <p>
-                    Thanks for reading!
-                    </p>
+                    
                 </LetterFromEdititor>
-
+                <ShareAndSportsEditorContainer>
+                <ShareButton />
                 <SportsEditorLayout>
-                    <SportsEditorWrapper>
-                        <NameStyling>Arielle Rieder</NameStyling>
-                        <Subtitle>Sports Editor</Subtitle>
-                    </SportsEditorWrapper>
+                    
 
                     <SportsEditorWrapper>
                         <NameStyling>Jillian Prunty</NameStyling>
                         <Subtitle>Sports Editor</Subtitle>
                     </SportsEditorWrapper>
                 </SportsEditorLayout>
+                </ShareAndSportsEditorContainer>
             </LetterFromEditorWrapper>
 
             <NavigationSec 

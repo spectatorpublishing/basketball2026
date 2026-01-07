@@ -10,7 +10,8 @@ import MobileNavBar from '../components/MobileNavBar';
 const ArticleWrapper = styled.div`
   display: flex;      
   flex-wrap: wrap;    
-  gap: 150px;         
+  gap: 150px;  
+ 
 
   justify-content: center;
   align-items: flex-start;

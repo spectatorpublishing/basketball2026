@@ -7,11 +7,14 @@ const Container = styled.div`
   font-style: normal;
   font-weight: 900;
   font-size: 3em;
-  margin-bottom: 3rem;
+
   height: 70rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  background-color: #3C5D64;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 86%;
+  margin-bottom: 3.825rem; 
+
   color: #FFF;
 
   @media (min-width: 768px) {
@@ -36,10 +39,12 @@ const HeaderDiv = styled.div`
 
 const Header = styled.h1`
   text-align: center;
-  font-weight: 900;
-  letter-spacing: 0.05em;
+  font-weight: 400;
+  letter-spacing: 10%;
   width: 55%;
-  font-size: 3.25rem;
+  font-family: Gochi Hand;
+  line-height: 60px;
+  font-size: 45px;
 
   @media only screen and (max-width: 1216px) {
     font-size: 2.1rem;
@@ -60,9 +65,11 @@ const SectAndNames = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
 
-  padding-left: 7%; 
+  padding-left: 10%; 
+
+
   align-content: space-around;
   width: 70%;
   height: 75%;
