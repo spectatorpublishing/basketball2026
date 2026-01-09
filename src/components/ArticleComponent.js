@@ -78,10 +78,10 @@ const ContentWrapper = styled.div`
 const Title = styled.div`
   width: 100%;
   color: #F7ECE5;
-  font-family: Inter, sans-serif;
-  font-size: 2rem; 
+  font-family: Inter;
+  font-size: 32px; 
   font-weight: 900;
-  letter-spacing: 1.6px;
+  letter-spacing: 5%;
 
   @media (max-width: 768px) {
     font-size: 1.6rem; 
@@ -95,7 +95,7 @@ const Title = styled.div`
 const Author = styled.div`
   width: 100%;
   color: #F7ECE5;
-  font-family: Inter, sans-serif;
+  font-family: Inter;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;

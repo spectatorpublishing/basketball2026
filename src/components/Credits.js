@@ -3,32 +3,26 @@ import styled from 'styled-components';
 import { credits } from '../data/credits';
 
 const Container = styled.div`
-  margin-top: 2rem; /* Reduced margin-top for mobile */
-  font-style: normal;
-  font-weight: 900;
-  font-size: 3em;
-  display: flex
-  height: 70rem;
-  justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3.825rem;
+
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   width: 86%;
-  margin-bottom: 3.825rem; 
+  height: auto;
+  padding-left: 5%;
 
   color: #FFF;
-
-  @media (min-width: 768px) {
-      border-style: solid;
-      border-color: #F7ECE5;
-      margin-top: 0px; /* Maintains margin-top for larger screens */
-  }
+  border: 3px solid #F7ECE5;
 
   @media (max-width: 480px) {
-      margin-top: 1rem; /* Further reduce margin-top for very small screens */
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
+    padding: 0 1.5rem;
   }
 `;
+
 
 const HeaderDiv = styled.div`
   display: flex;
@@ -44,7 +38,7 @@ const Header = styled.h1`
   width: 55%;
   font-family: Gochi Hand;
   line-height: 60px;
-  font-size: 45px;
+  font-size: 55px;
 
   @media only screen and (max-width: 1216px) {
     font-size: 2.1rem;
@@ -64,12 +58,11 @@ const Header = styled.h1`
 const SectAndNames = styled.div`
   display: grid;
   grid-template-columns: repeat(3, minmax(14rem, 1fr));
-  gap: 3rem 3rem;
-  padding-left: 15%;
-
+  gap: 3rem;
+  
   width: 100%;
-  max-width: 72rem; /* controls table width */
-  margin: 3rem auto 0; /* centers grid */
+  max-width: 72rem;
+  margin: 3rem auto 0;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
@@ -77,44 +70,45 @@ const SectAndNames = styled.div`
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 `;
+
 
 
 const Section = styled.div`
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: 700;
-  width: 20rem;
-  height: fit-content;
   color: white;
-  margin-bottom: 2rem;
-  padding: 0;
-  margin: 0;
+  font-family: Inter;
+  width: 100%;
 
-  @media only screen and (max-width: 1216px) {
+  @media (max-width: 1216px) {
     font-size: 1.6rem;
-    width: 16rem;
   }
-  @media only screen and (max-width: 1024px) {
+
+  @media (max-width: 1024px) {
     font-size: 1.4rem;
-    width: 14rem;
   }
-  @media only screen and (max-width: 768px) {
-    font-size: 1.5rem;
+
+  @media (max-width: 768px) {
     text-align: center;
-    width: 100%;
+    font-size: 1.5rem;
   }
-  @media only screen and (max-width: 600px) {
+
+  @media (max-width: 600px) {
     font-size: 1.2rem;
-    width: 85%;
   }
 `;
 
+
 const Name = styled.div`
-  font-size: 1.15rem;
+  font-size: 28px;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  line-height: 140%;
+  font-family: Inter;
 
   @media only screen and (max-width: 1216px) {
     font-size: 1rem;
@@ -152,4 +146,4 @@ const Credits = () => {
   );
 };
 
-exp
+export default Credits;

@@ -93,7 +93,7 @@ const SportsEditorLayout = styled.div`
     display: flex;
     flex-direction: row; 
     gap: 18rem; 
-    margin-bottom: 2rem;
+   
     justify-content: right;
     align-items: right;
 
@@ -105,10 +105,21 @@ const SportsEditorLayout = styled.div`
 `;
 
 const ShareAndSportsEditorContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  width: 100%;
+  max-width: 86%;
+  padding: 0 10%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+  }
 `;
 
 
@@ -202,13 +213,4 @@ Velit massa facilisis non enim arcu. Euismod cursus neque, feugiat vestibulum or
 
             <NavigationSec 
                 first={true}            
-                next="All Basketball"         
-                link="/all"        
-            />
-
-            <Credits />
-        </PageWrapper>
-    );
-};
-
-export default Home;
+               
