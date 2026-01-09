@@ -9,6 +9,11 @@ import {
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useOnClickOutside } from "../scripts/useOnClickOutside";
 
+const ButtonWrapper = styled.div`
+display: flex;
+    flex-direction: row;
+    width: 500px;
+`;
 const StyledShareButton = styled.button`
   background-color: #F07136;
   color: #F7ECE5;
@@ -21,16 +26,13 @@ const StyledShareButton = styled.button`
   transform: translateX(0);
   transition: 300ms ease-in-out;
 
-  margin-top: 61.5px;
-  margin-right: 56px; 
-  margin-left: auto; 
-  display: block;
+  
 
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto; 
+
   }
 `;
 
@@ -193,22 +195,28 @@ function ShareButton(props) {
   );
 
   return (
-    <StyledShareButton
-      onClick={() => setIsShowingShareCircles(!isShowingShareCircles)}
-      ref={shareButtonRef}
-    >
+    <ButtonWrapper>
+    <StyledShareButton>
       Share
-
-      {isShowingShareCircles && (
-        isMobile ? (
-          <CircleWrapper>
-            {shareLinks}
-          </CircleWrapper>
-        ) : (
-          <>{shareLinks}</>
-        )
-      )}
     </StyledShareButton>
+      <CircleWrapper><ShareLink
+        href={`https://www.linkedin.com/shareArticle?mini=true&url=${linkUrl}&title=${headline}`}
+        order={3}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <ShareCircle>
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            fixedWidth
+            style={{ height: "2.15rem" }}
+            color={"white"}
+          />
+        </ShareCircle>
+      </ShareLink></CircleWrapper>
+      </ButtonWrapper>
+
+    
   );
 }
 

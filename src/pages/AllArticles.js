@@ -11,6 +11,7 @@ const ArticleWrapper = styled.div`
   display: flex;      
   flex-wrap: wrap;    
   gap: 150px;  
+
  
 
   justify-content: center;

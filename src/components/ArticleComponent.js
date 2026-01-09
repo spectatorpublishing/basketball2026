@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const ArticleContainer = styled.div`
   width: 100%;
-  max-width: 591px;
+  max-width: 520px;
+  min-height: 591px;
   border: 5px solid #F7ECE5;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   position: relative;

@@ -7,7 +7,7 @@ const Container = styled.div`
   font-style: normal;
   font-weight: 900;
   font-size: 3em;
-
+  display: flex
   height: 70rem;
   justify-content: center;
   align-items: center;
@@ -62,33 +62,29 @@ const Header = styled.h1`
 `;
 
 const SectAndNames = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(14rem, 1fr));
+  gap: 3rem 3rem;
+  padding-left: 15%;
 
-  padding-left: 10%; 
+  width: 100%;
+  max-width: 72rem; /* controls table width */
+  margin: 3rem auto 0; /* centers grid */
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  align-content: space-around;
-  width: 70%;
-  height: 75%;
-
-  @media only screen and (max-width: 768px) {
-    margin-left: 1rem;
-    display: block;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: none;
-    height: fit-content;
-    margin-top: 2rem;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
   }
 `;
+
 
 const Section = styled.div`
   font-size: 1.5rem;
   font-weight: 700;
-  width: 22rem;
+  width: 20rem;
   height: fit-content;
   color: white;
   margin-bottom: 2rem;
@@ -156,4 +152,4 @@ const Credits = () => {
   );
 };
 
-export default Credits;
+exp
