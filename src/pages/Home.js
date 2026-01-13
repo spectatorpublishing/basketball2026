@@ -213,4 +213,13 @@ Velit massa facilisis non enim arcu. Euismod cursus neque, feugiat vestibulum or
 
             <NavigationSec 
                 first={true}            
-               
+                next="All Basketball"         
+                link="/all"        
+            />
+
+            <Credits />
+        </PageWrapper>
+    );
+};
+
+export default Home;
