@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import backgroundImage from  '../images/navimage.png'
+import backgroundImage from  '../images/navimage.jpg'
 import HomepageIcon from './HomepageIcon'
 
 const BackgroundImage = styled.div`
