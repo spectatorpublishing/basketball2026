@@ -57,13 +57,13 @@ const CopyButton = styled.button`
 
 function ShareButton(props) {
   const linkUrl = encodeURIComponent(
-    `https://www.columbiaspectator.com${props.canonical_url}`
+    `https://basketball2026.columbiaspectator.com/`
   );
   const headline = encodeURIComponent(props.headline);
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(
-      `https://www.columbiaspectator.com${props.canonical_url}`
+      `https://basketball2026.columbiaspectator.com/`
     );
   };
 

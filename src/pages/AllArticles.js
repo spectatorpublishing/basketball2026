@@ -17,7 +17,7 @@ const ArticleWrapper = styled.div`
 
 const ArticleRow = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 80px;
   justify-content: center;
 
   & > * {

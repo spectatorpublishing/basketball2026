@@ -185,16 +185,20 @@ const Home = () => {
             <Title>LETTER FROM THE EDITOR</Title>
                 <LetterFromEdititor>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. A mollis amet vitae sed purus, semper ullamcorper augue vitae. Hac pretium urna, tempus sit quam suspendisse maecenas et. Egestas neque sollicitudin rhoncus vitae at ipsum pulvinar faucibus. Facilisi risus blandit egestas in dignissim et sapien faucibus. Tortor accumsan libero sed aliquam dui magna vitae, habitant egestas. Consectetur egestas tellus auctor interdum id gravida quis pellentesque. At amet nulla tellus orci gravida. Egestas aenean mauris in velit. Fermentum consectetur augue et habitant commodo, libero odio.
+                    This season, Columbia basketball once again finds itself at a pivotal moment. On the men’s side, change has taken center stage: With the hiring of new head coach Kevin Hovde, the program has entered a new era—one that is already showing promising results. Under Hovde’s leadership, the Lions have matched last season’s conference win total, signaling progress and renewed energy.
                     </p>
                     
                     <p>
-                    Id nascetur vel eu fermentum elementum ac cras enim. Dui habitant commodo consequat sit in molestie in id. Ipsum volutpat etiam tristique fringilla. Tellus eu quis mauris massa tristique tortor, egestas luctus lacus. Gravida facilisis sagittis eget facilisi molestie amet, ut pellentesque morbi.
+                    Meanwhile, Columbia women’s basketball continues to build on a legacy years in the making. As the program seeks a fourth-consecutive Ivy League regular-season title, an Ivy Tournament championship, and another ticket to the Big Dance, this season represents both a pursuit of history and a celebration of it.
                     </p>
                 
                     <p>
-Velit massa facilisis non enim arcu. Euismod cursus neque, feugiat vestibulum ornare. Feugiat feugiat tincidunt purus mauris quis lectus neque, molestie. Sed auctor sit fusce tristique. Nisl eu nullam gravida massa morbi purus. Ullamcorper eget sed venenatis enim, elit. In cursus pellentesque lacus ornare a. 
+In this edition, we take a closer look at each teams’ coaching staff and examine how leadership has shaped the season thus far. We also reflect on the rich history of women’s basketball at Columbia and what it means for the team to once again carry championship expectations. Our writers break down conference play, spotlight key contributors, and explore the broader narratives defining the season. From coaching changes to championship chases, this edition offers everything Lions fans need to know about Columbia basketball as another memorable year unfolds.
                     </p>
+
+                    <p>With history within reach and new chapters being written, we hope you enjoy the 2025-26 Basketball Edition.</p>
+
+                    <p>Thanks for reading!</p>
 
                     
                 </LetterFromEdititor>
@@ -204,7 +208,7 @@ Velit massa facilisis non enim arcu. Euismod cursus neque, feugiat vestibulum or
                     
 
                     <SportsEditorWrapper>
-                        <NameStyling>Jillian Prunty</NameStyling>
+                        <NameStyling>Kaya Quebada</NameStyling>
                         <Subtitle>Sports Editor</Subtitle>
                     </SportsEditorWrapper>
                 </SportsEditorLayout>

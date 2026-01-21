@@ -83,12 +83,12 @@ const NavButton = ({ path_name, children }) => {
 
     if (location.pathname === path_name) {
       event.preventDefault();
-      navigate('/all');
+      navigate('/all', { state: { preserveScroll: true } });
     }
   };
 
   return (
-    <StyledNavLink to={path_name} onClick={handleClick}>
+    <StyledNavLink to={path_name} onClick={handleClick} state={{ preserveScroll: true }}>
       {children}
     </StyledNavLink>
   );

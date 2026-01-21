@@ -11,7 +11,7 @@ const BackgroundImage = styled.div`
     background-size: cover;
     background-position: top;
     width:100%;
-    height: 100vh;
+    height: 50vw;
     
     @media (max-width: 500px) {
         width:100%;

@@ -3,26 +3,30 @@ import styled from 'styled-components';
 import { credits } from '../data/credits';
 
 const Container = styled.div`
-  margin-top: 2rem;
-  margin-bottom: 3.825rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 86%;
-  height: auto;
-  padding-left: 5%;
-
+  margin-top: 2rem; /* Reduced margin-top for mobile */
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3em;
+  margin-bottom: 3rem;
+  height: 110rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: transparent;
   color: #FFF;
-  border: 3px solid #F7ECE5;
+
+  @media (min-width: 768px) {
+      border-style: solid;
+      border-color: #F7ECE5;
+      margin-top: 0px; /* Maintains margin-top for larger screens */
+      height: 50rem;
+  }
 
   @media (max-width: 480px) {
-    padding: 0 1.5rem;
+      margin-top: 1rem; /* Further reduce margin-top for very small screens */
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
   }
 `;
-
 
 const HeaderDiv = styled.div`
   display: flex;
@@ -33,12 +37,10 @@ const HeaderDiv = styled.div`
 
 const Header = styled.h1`
   text-align: center;
-  font-weight: 400;
-  letter-spacing: 10%;
+  font-weight: 900;
+  letter-spacing: 0.05em;
   width: 55%;
-  font-family: Gochi Hand;
-  line-height: 60px;
-  font-size: 55px;
+  font-size: 3.25rem;
 
   @media only screen and (max-width: 1216px) {
     font-size: 2.1rem;
@@ -56,59 +58,62 @@ const Header = styled.h1`
 `;
 
 const SectAndNames = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, minmax(14rem, 1fr));
-  gap: 3rem;
-  
-  width: 100%;
-  max-width: 72rem;
-  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
 
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  padding-left: 7%;
+  padding-right: 7%; 
+  align-content: space-around;
+  width: 80%;
+  height: 75%;
 
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  @media only screen and (max-width: 768px) {
+    margin-left: 1rem;
+    display: block;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: none;
+    height: fit-content;
+    margin-top: 2rem;
   }
 `;
-
-
 
 const Section = styled.div`
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 700;
+  width: 22rem;
+  height: fit-content;
   color: white;
-  font-family: Inter;
-  width: 100%;
+  margin-bottom: 2rem;
+  padding: 0;
+  margin: 0;
 
-  @media (max-width: 1216px) {
+  @media only screen and (max-width: 1216px) {
     font-size: 1.6rem;
+    width: 16rem;
   }
-
-  @media (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     font-size: 1.4rem;
+    width: 14rem;
   }
-
-  @media (max-width: 768px) {
-    text-align: center;
+  @media only screen and (max-width: 768px) {
     font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
   }
-
-  @media (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
     font-size: 1.2rem;
+    width: 85%;
   }
 `;
 
-
 const Name = styled.div`
-  font-size: 28px;
+  font-size: 1.15rem;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  line-height: 140%;
-  font-family: Inter;
 
   @media only screen and (max-width: 1216px) {
     font-size: 1rem;
