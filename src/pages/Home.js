@@ -23,12 +23,14 @@ const Title = styled.div`
     height: auto; 
     flex-shrink: 0;
 
+
+
    
     width: 85%;
     padding-top: 6rem;   
     padding-bottom: 1rem;
     color: #F7ECE5;
-    text-align: left;
+    text-align: center;
     
     font-family: Gochi Hand;
     font-size: 56px; 

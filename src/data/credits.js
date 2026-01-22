@@ -27,17 +27,17 @@ export const credits = {
     { staff_name: "Audrea Chen", title: "Photo Editor" },
     { staff_name: "Esmerelda Paredes", title: "Deputy Photo Editor" },
   ],
-  "Product": [
-    { staff_name: "Eugene Kim", title: "Head of Product" },
+    "Illustrations": [
+    { staff_name: "Saumya Chaudhry", title: "Illustrations Editor" },
+    { staff_name: "Anaïs Fotsing", title: "Deputy Illustrations Editor" },
   ],
   "Engineering": [
     { staff_name: "Julien Remy", title: "Co-Head of Engineering" },
     { staff_name: "Shriya Mani", title: "Co-Head of Engineering" },
     { staff_name: "Alyssa King", title: "Senior Developer" }
   ],
-  "Illustrations": [
-    { staff_name: "Saumya Chaudhry", title: "Illustrations Editor" },
-    { staff_name: "Anaïs Fotsing", title: "Deputy Illustrations Editor" },
+  "Product": [
+    { staff_name: "Eugene Kim", title: "Head of Product" },
   ],
   
 };

@@ -18,7 +18,7 @@ const Container = styled.div`
       border-style: solid;
       border-color: #F7ECE5;
       margin-top: 0px; /* Maintains margin-top for larger screens */
-      height: 50rem;
+      height: 55rem;
   }
 
   @media (max-width: 480px) {
@@ -41,6 +41,8 @@ const Header = styled.h1`
   letter-spacing: 0.05em;
   width: 55%;
   font-size: 3.25rem;
+  margin: 5rem;
+  font-family: "Gochi Hand", cursive;
 
   @media only screen and (max-width: 1216px) {
     font-size: 2.1rem;
@@ -114,6 +116,7 @@ const Name = styled.div`
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
+
 
   @media only screen and (max-width: 1216px) {
     font-size: 1rem;
